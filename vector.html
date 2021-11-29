@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    #score {
+      color: red;
+    }
+    #vector1 {
+      width: 25em;
+      height: 25em;
+    }
+    canvas {
+      width: 25em;
+      height: 25em;
+    }
+    #result {
+      display: flex;
+      justify-content: center;
+    }
+    #vector {
+      display: flex;
+    }
+    #description {
+      display: block;
+      height: 100%;
+    }
+  </style>
+  <script src="https://cdn.plot.ly/plotly-2.4.2.min.js"></script>
+  <script src="./javascript/vector.js"></script>
+  
+  <!-- Getting Matching Score -->
+  <script>
+    const kUrlSearch = new URLSearchParams(location.search)
+    
+    var vectorStr = kUrlSearch.get('v')
+
+    vector = vectorStr.split('').map(v => (parseInt(v) - 5))
+
+    var my_vector = vector.slice(0, 4)
+    var partner_vector = vector.slice(4, 8)
+  </script>
+</head>
+<body>
+  <h1>당신의 매칭 코드는 <span id="my_vector"></span>-<span id="partner_vector"></span>입니다.</h1>
+  <div id="result">
+    <div id="vector">
+    </div>
+  </div>
+  <a href="index.html"><button>홈으로</button></a>
+  <script>
+    var my_vector_element = document.getElementById('my_vector')
+    var partner_vector_element = document.getElementById('partner_vector')
+
+    my_vector_element.innerHTML = vectorStr.slice(0, 4)
+    partner_vector_element.innerHTML = vectorStr.slice(4, 8)
+
+    Plotly.newPlot('vector', [
+      new DrawableAxis('x'),
+      new DrawableAxis('y'),
+      new DrawableAxis('z'),
+      new DrawableVector(my_vector),
+      new DrawableVector(partner_vector)
+    ], {
+      showlegend: false,
+      margin: {
+        b: 0,
+        t: 0,
+        l: 0,
+        r: 0
+      }
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    #score {
+      color: red;
+    }
+    #vector1 {
+      width: 25em;
+      height: 25em;
+    }
+    canvas {
+      width: 25em;
+      height: 25em;
+    }
+    #result {
+      display: flex;
+    }
+    #vector {
+      display: flex;
+    }
+    #description {
+      display: block;
+      height: 100%;
+    }
+  </style>
+  <script src="https://cdn.plot.ly/plotly-2.4.2.min.js"></script>
+  <script src="./javascript/vector.js"></script>
+  
+  <!-- Getting Matching Score -->
+  <script>
+    const kUrlSearch = new URLSearchParams(location.search)
+    
+    var person1_vector = kUrlSearch.get('p1')
+    var person2_vector = kUrlSearch.get('p2')
+
+    person1_vector = person1_vector.split('').map(v => (parseInt(v) - 5))
+    person2_vector = person2_vector.split('').map(v => (parseInt(v) - 5))
+
+    var person1_my_vector = person1_vector.slice(0, 4)
+    var person1_partner_vector = person1_vector.slice(4, 8)
+
+    var person2_my_vector = person2_vector.slice(0, 4)
+    var person2_partner_vector = person2_vector.slice(4, 8)
+
+    var score = Cosine(
+      [...person1_my_vector, ...person1_partner_vector], 
+      [...person2_partner_vector, ...person2_my_vector]
+    )
+    score = Math.round((score + 1) * 50)
+  </script>
+</head>
+<body>
+  <h1>여러분의 매칭 점수는 <span id="score"></span>점입니다.</h1>
+  <div id="result">
+    <div id="vector">
+      <div id="vector1"></div>
+      <div id="vector2"></div>
+    </div>
+    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur, eligendi eveniet placeat dignissimos atque saepe alias veniam sed quisquam suscipit hic odit perspiciatis recusandae vero officia ratione quos fuga?</p>
+  </div>
+  <a href="index.html"><button>홈으로</button></a>
+  <script>
+    var score_element = document.getElementById('score')
+    score_element.innerHTML = score
+    Plotly.newPlot('vector1', [
+      new DrawableAxis('x'),
+      new DrawableAxis('y'),
+      new DrawableAxis('z'),
+      new DrawableVector(person1_my_vector),
+      new DrawableVector(person2_partner_vector)
+    ], {
+      showlegend: false,
+      margin: {
+        b: 0,
+        t: 0,
+        l: 0,
+        r: 0
+      }
+    })
+    Plotly.newPlot('vector2', [
+      new DrawableAxis('x'),
+      new DrawableAxis('y'),
+      new DrawableAxis('z'),
+      new DrawableVector(person2_my_vector),
+      new DrawableVector(person1_partner_vector)
+    ], {
+      showlegend: false,
+      margin: {
+        b: 0,
+        t: 0,
+        l: 0,
+        r: 0
+      }
+    })
+  </script>
+</body>
+</html>

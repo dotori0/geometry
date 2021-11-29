@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./javascript/vector.js"></script>
+  <script>
+    function GetScoreResult() {
+      var p1_my_vector = Number(document.getElementById('p1_my_vector').value)
+      var p1_partner_vector = Number(document.getElementById('p1_partner_vector').value)
+      var p2_my_vector = Number(document.getElementById('p2_my_vector').value)
+      var p2_partner_vector = Number(document.getElementById('p2_partner_vector').value)
+
+      try {
+        ValidateVector(p1_my_vector)
+        ValidateVector(p1_partner_vector)
+        ValidateVector(p2_my_vector)
+        ValidateVector(p2_partner_vector)
+      } catch (e) {
+        alert(e)
+        return
+      }
+
+      document.location.href = `./result.html?`
+        + `p1=${String(p1_my_vector) + String(p1_partner_vector)}&`
+        + `p2=${String(p2_my_vector) + String(p2_partner_vector)}`
+    }
+  </script>
+</head>
+<body style="text-align: center;">
+  <h1>p1</h1>
+  <input type="text" maxlength="4" id="p1_my_vector"> - <input type="text" maxlength="4" name="" id="p1_partner_vector">
+  <br><br>
+  <h1>p2</h1>
+  <input type="text" maxlength="4" id="p2_my_vector"> - <input type="text" maxlength="4" name="" id="p2_partner_vector">
+  <br><br>
+  <button type="submit" onclick="GetScoreResult()">submit</button>
+</body>
+</html>
