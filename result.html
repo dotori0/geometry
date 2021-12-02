@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    .center {
+      display: flex;
+      justify-content: center;
+    }
     body {
       text-align: center;
     }
@@ -15,6 +19,14 @@
     #vector1 {
       width: 25em;
       height: 25em;
+      border: 1px solid black;
+      margin: 10px;
+    }
+    #vector2 {
+      width: 25em;
+      height: 25em;
+      border: 1px solid black;
+      margin: 10px;
     }
     canvas {
       width: 25em;
@@ -22,13 +34,26 @@
     }
     #result {
       display: flex;
+      justify-content: center;
     }
     #vector {
       display: flex;
     }
     #description {
       display: block;
+      width: 60%;
       height: 100%;
+      border: 1px solid black;
+      padding: 2em;
+    }
+    #eval {
+      font-size: 1.5em;
+    }
+    .arrow {
+      width: 6em;
+      height: 5em;
+      margin-top: auto;
+      margin-bottom: auto;
     }
   </style>
   <script src="https://cdn.plot.ly/plotly-2.4.2.min.js"></script>
@@ -59,12 +84,17 @@
 </head>
 <body>
   <h1>여러분의 매칭 점수는 <span id="score"></span>점입니다.</h1>
+  <div class="center">
+    <fieldset id="description">
+      <legend id="eval">●&nbsp;&nbsp;총평&nbsp;&nbsp;●</legend>
+    </fieldset>
+  </div>
   <div id="result">
     <div id="vector">
       <div id="vector1"></div>
+      <img src="./image/arrow.png" alt="" class="arrow">
       <div id="vector2"></div>
     </div>
-    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur, eligendi eveniet placeat dignissimos atque saepe alias veniam sed quisquam suscipit hic odit perspiciatis recusandae vero officia ratione quos fuga?</p>
   </div>
   <a href="index.html"><button>홈으로</button></a>
   <script>
@@ -100,6 +130,17 @@
         r: 0
       }
     })
+  </script>
+  <script>
+    if (score < 25) {
+      document.getElementById('description').innerHTML += '친구와 안 맞는 부분이 정말 많네요~ 하지만 이럼에도 불구하고 베스트프렌드가 된 두 사람! 엄청난 우정이군요! 안 맞는 부분들은 차차 맞춰가면 되는 것이고 잘 맞는 부분은 더 발전시켜 나가면 되는 법! 앞으로도 두 사람의 찐~한 우정 이어나가시길 바랄게요!'
+    } else if (score < 50) {
+      document.getElementById('description').innerHTML += '친구와 맞지 않는 면이 어느정도 있습니다. 하지만 이 정도 쯤이야~ 우정에 대한 노력으로 충분히 극복할 수 있어요! 두 사람의 찐 우정!! 만약 다른 부분들을 서로 맞춰나가기 위해 노력한다면 얼마나 더 친해질까요? 벌써부터 기대가됩니다!'
+    } else if (score < 75) {
+      document.getElementById('description').innerHTML += '친구와 잘 맞는 부분이 엄청 많네요! 왜 친한 친구가 될 수 있었는지.. 말은 하지 않았지만 알 수 있겠네요~ 그래도 친하고 잘 맞는 친구이니 만큼 더 아끼고 사랑해줘야 한다는 사실! 흔치 않은 기회로 만날 수 있는 나만의 짱친이니 만큼 더 많은 추억 만들어 나가는 건 어떨까요!'
+    } else {
+      document.getElementById('description').innerHTML += '이 사람은 나의 인생의 동반자! 아무리 찐 사랑이라도 이 정도는 힘들거에요!! 엄청난 정도의 단합력! 어쩌면 다시는 만날 수 없는 행운의 친구를 만난 걸지도 모르겠네요~ 말하지 않아도 전혀 어색하지 않고 텔레파시로도 대화가 통하는 수준! 이 사람은 절대 놓치지 마세요^^'
+    }
   </script>
 </body>
 </html>
