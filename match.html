@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    a{color:#000;text-decoration:none;}
+    ul,ol,li{list-style:none;}
+  </style>
   <script src="./javascript/vector.js"></script>
   <script>
     function GetScoreResult() {
@@ -30,6 +35,15 @@
   </script>
 </head>
 <body style="text-align: center;">
+  <header>
+    <h1 class="to-main"><a href="index.html">메인페이지</a></h1>
+    <nav class="main_bar">
+        <ul>
+            <li><a href="question.html">My Vector</a></li>
+            <li><a href="match.html">Matching</a></li>
+        </ul>
+    </nav>
+  </header>
   <h1>
     User 1
     <input type="text" maxlength="4" id="p1_my_vector"> - <input type="text" maxlength="4" name="" id="p1_partner_vector">

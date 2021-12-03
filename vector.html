@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
   <title>Document</title>
   <style>
+    ul,ol,li{list-style:none;}
+    a{color:#000;text-decoration:none;}
     body {
       text-align: center;
     }
@@ -77,6 +80,15 @@
   </script>
 </head>
 <body>
+  <header>
+    <h1><a href="index.html">메인페이지</a></h1>
+    <nav class="main_bar">
+        <ul>
+            <li><a href="question.html">My Vector</a></li>
+            <li><a href="match.html">Matching</a></li>
+        </ul>
+    </nav>
+  </header>
   <h1>당신의 매칭 코드는 <span style="color: red;"><span id="my_vector"></span>-<span id="partner_vector"></span></span>입니다.</h1>
   <div id="result">
     <div id="vector1">my vector</div>
@@ -97,7 +109,6 @@
       <div id="d4" class="description-box"></div>
     </fieldset>
   </div>
-  <a href="index.html"><button>홈으로</button></a>
   <script>
     var my_vector_element = document.getElementById('my_vector')
     var partner_vector_element = document.getElementById('partner_vector')
