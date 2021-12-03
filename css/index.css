@@ -1,0 +1,151 @@
+header { text-align: center; padding: 1.5vw; background-color: white; 
+    border-bottom: 1px solid black}
+header h1 { position: absolute; left: 2vw; top: 1.5vw;}
+header h1 a{ display: block; width: 205px; height: 40px; color: transparent; 
+    background: url(../image/Vector_Match.png);}
+header .main_bar li { display: inline-block; padding-left: 10vw;}
+header .main_bar li a { display: block; height: 2vw; padding: 0 1.5vw; 
+    font-family: Microsoft Himalaya; font-style: normal; font-weight: normal;
+    font-size: 40px; color: rgba(112,112,112,1);}
+.main_talk { text-align: center; height: 50vw; font-family: Noto Sans KR; font-style: normal; 
+    font-weight: bold; font-size: 30px; color: rgba(255,255,255,1); 
+    background: url(../image/main_background.png); background-size: cover;}
+.mean { text-align: center; height: 5vw; font-family: Noto Sans KR; padding-top: 3vw;
+    font-style: normal; font-weight: bold; font-size: 50px; 
+    color: rgba(0,0,0,1);}
+#line { fill: transparent; stroke: rgba(112,112,112,1); stroke-width: 1px;
+	stroke-linejoin: miter; stroke-linecap: butt; stroke-miterlimit: 4; shape-rendering: auto;}
+.line { overflow: visible; position: absolute; width: 645px; height: 1px;
+	left: 637.5px; top: 1239.5px; transform: matrix(1,0,0,1,0,0);}
+.button { position: absolute; width: 345px; height: 86px; left: 788px;
+	top: 554px; overflow: visible;}
+#button_shape { fill: rgba(230,114,114,1);}
+.button_shape { filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161)); position: absolute;
+	overflow: visible; width: 363px; height: 104px; left: 0px; top: 0px;}
+.button .go a { color: rgba(255,255,255,1);}
+.go { left: 37px; top: 21px; position: absolute; overflow: visible;	width: 235px;
+	white-space: nowrap; text-align: left; font-family: Noto Sans KR;
+	font-style: normal; font-weight: normal; font-size: 30px; color: rgba(255,255,255,1);}
+#button_go { fill: rgba(255,255,255,1);}
+.button_go { overflow: visible; position: absolute; width: 30.841px; height: 26.355px; 
+    transform: translate(-788px, -554px) matrix(1,0,0,1,1078.257,583.8223) rotate(90deg);
+	transform-origin: center; left: 0px; top: 0px;}
+    #n_49 {
+		position: absolute;
+		width: 448px;
+		height: 36px;
+		left: 736px;
+		top: 1304px;
+		overflow: visible;
+	}
+	#n_021_CNSA_Geometry_Team_Yeong {
+		left: 27px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 422px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Noto Sans KR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(0,0,0,1);
+	}
+	#premium-icon-copyright-4797926 {
+		position: absolute;
+		width: 27px;
+		height: 27px;
+		left: 0px;
+		top: 5px;
+		overflow: visible;
+	}
+    #n_52 {
+		position: absolute;
+		width: 534px;
+		height: 36px;
+		left: 693px;
+		top: 1360px;
+		overflow: visible;
+	}
+	#Text {
+		left: 465px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Noto Sans KR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(0,0,0,1);
+	}
+	#Text_eo {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Noto Sans KR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(0,0,0,1);
+	}
+	#n___ep {
+		left: 181px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 173px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Noto Sans KR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(0,0,0,1);
+	}
+    #n_51 {
+		position: absolute;
+		width: 127px;
+		height: 127px;
+		left: 897px;
+		top: 1430px;
+		overflow: visible;
+	}
+	#VM {
+		left: 23px;
+		top: 44px;
+		position: absolute;
+		overflow: visible;
+		width: 82px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Matura MT Script Capitals;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(0,0,0,1);
+	}
+	#n_1_ei {
+		fill: transparent;
+		stroke: rgba(0,0,0,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_1_ei {
+		position: absolute;
+		overflow: visible;
+		width: 127px;
+		height: 127px;
+		left: 0px;
+		top: 0px;
+	}

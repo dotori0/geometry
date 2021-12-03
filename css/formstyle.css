@@ -1,0 +1,140 @@
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 100%;
+    /* To see the outline of the form */
+    padding: 1vw;
+    border: 1px solid #CCC;
+    border-radius: 1vw;
+}
+
+div{
+  text-align: center;
+  padding: 2vw;
+}
+
+.question{
+  margin-top: 12vw;
+  margin-bottom: 11vw;
+  position: relative;
+  text-align: center;
+  font: normal normal bold 2.08vw/2.77vw Segoe UI;
+  letter-spacing: 0vw;
+  color: #000000;
+}
+
+
+.checks input[type="radio"]{
+  display:none;
+}
+
+/* 체크박스*/
+.checks input[type="radio"] + span {
+  display: inline-block;
+  content: '';
+  border: 1px solid #707070;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  opacity: 1;
+  vertical-align: middle;
+  /*70px씩 떨어뜨림*/
+  margin-left: 2.43vw;
+  margin-right: 2.43vw;
+}
+
+.checks input[type="radio"]:checked + span{
+  border:1px solid #93BCD1;
+  background:#93BCD1;
+  color: #111111;
+}
+
+/*4점*/
+.checks input[class="four"] + span {
+  width: 6.94vw;
+  height: 6.94vw;
+}
+
+/*2점*/
+.checks input[class="two"] + span {
+  width: 4.86vw;
+  height: 4.86vw;
+}
+
+/*0점*/
+.checks input[class="zero"] + span {
+  width: 3.47vw;
+  height: 3.47vw;
+}
+
+
+/*화살표*/
+.arrows{
+  position: absolute;
+  vertical-align: middle;
+
+}
+
+.l_arrow_hd{
+  width: 3vw;
+  height: 3vw;
+  border-top: 2.5vw solid #E67272;
+  display: inline-block;
+  border-right: 2.5vw solid #E67272;
+  transform: rotate(225deg);
+  position: absolute;
+  top:2vw;
+  left:25.23vw;
+  background: none;
+}
+
+
+.l_arrow_bd{
+  width: 0;
+  height: 0;
+  border-top: 1.2vw solid transparent;
+  border-bottom: 1.2vw solid transparent;
+  border-left: 25vw solid #E67272;
+  top:3.3vw;
+  left:26vw;
+  position: absolute;
+}
+
+.r_arrow_bd{
+  width: 0;
+  height: 0;
+  border-top: 1.2vw solid transparent;
+  border-bottom: 1.2vw solid transparent;
+  border-right: 25vw solid #BFC1C2;
+  top:3.3vw;
+  left:51vw;
+  position: absolute;
+}
+
+.r_arrow_hd{
+  width: 3vw;
+  height: 3vw;
+  border-top: 2.5vw solid #BFC1C2;
+  border-right: 2.5vw solid #BFC1C2;
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  top:2vw;
+  left:72vw;
+  background: none;
+}
+
+
+/*버튼*/
+.btn{
+  width: 14.72vw;
+  height: 5.13vw;
+  left: 43vw;
+  position: relative;
+  background: #E67272 0% 0% no-repeat padding-box;
+  box-shadow: 0vw 0.4vw 0.8vw #00000029;
+  border: 0.06vw solid #E67272;
+  text-align: center;
+  font: normal normal bold 2.08vw/2.77vw Segoe UI;
+  letter-spacing: 0vw;
+  color: #FFFFFF;
+}

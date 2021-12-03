@@ -1,0 +1,203 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.canvas{
+  position: absolute;
+  width:100px;
+  height:100px;
+}
+
+
+    #title {
+        position: absolute;
+        top: 11.8750vw;
+        left: 36.3750vw;
+        width: 24.5833vw;
+        height: 3.7500vw;
+        text-align: center;
+        font: normal normal bold 2.7778vw/3.6806vw Segoe UI;
+        letter-spacing: 0vw;
+        color: #000000;
+        opacity: 1;
+          }
+
+
+
+    #sub {
+        position: absolute;
+        top: 17.2222vw;
+        left: 37.8944vw;
+        width: 21.9444vw;
+        height: 1.8750vw;
+        text-align: center;
+        font: normal normal bold 1.3889vw/1.8750vw Segoe UI;
+        letter-spacing: 0vw;
+        color: #000000;
+        opacity: 1;
+        }
+
+    #Mother {
+        position: relative;
+        top: 0vw;
+        left: 0vw;
+        width: 100%;
+        height: 50.0417vw;
+        background: #93BCD1 0% 0% no-repeat padding-box;
+
+      }
+
+
+
+    #red {
+        position: absolute;
+        top: 23.1250vw;
+        left: 19.0556vw;
+        width: 18.5417vw;
+        height: 16.0417vw;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0vw 0.2083vw 0.4167vw #00000029;
+        border: 0.0694vw solid #707070;
+        border-radius: 0.4861vw;
+        opacity: 0.0694vw;
+    }
+
+    #rcolor {
+        position: absolute;
+        top: 23.1250vw;
+        left: 19.0556vw;
+        width: 18.5417vw;
+        height: 1.0417vw;
+        background: #E37272 0% 0% no-repeat padding-box;
+        border: 0.0694vw solid #707070;
+        border-radius: 0.3472vw;
+        opacity: 1;
+    }
+
+    #rpic {
+        position: absolute;
+        top: 25.0000vw;
+        left: 24.0556vw;
+        width: 8.8194vw;
+        height: 8.8194vw;
+        background: transparent url("https://ifh.cc/g/KTkQxX.png") 0% 0% no-repeat padding-box;
+        background-size: contain;
+        opacity: 1;
+    }
+
+    #rtext {
+        position: absolute;
+        top: 34.3056vw;
+        left: 20.5833vw;
+        width: 15.1389vw;
+        height: 3.7500vw;
+        text-align: center;
+        font: normal normal bold 1.3889vw/1.8750vw Segoe UI;
+        letter-spacing: 0vw;
+        color: #000000;
+        opacity: 1;
+    }
+
+
+    #mustard {
+        position: absolute;
+        top: 23.1250vw;
+        left: 39.0306vw;
+        width: 18.5417vw;
+        height: 16.0417vw;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0vw 0.2083vw 0.4167vw #00000029;
+        border: 0.0694vw solid #707070;
+        border-radius: 0.4861vw;
+        opacity: 1;
+    }
+
+    #mcolor {
+        position: absolute;
+        top: 23.1250vw;
+        left: 39.0306vw;
+        width: 18.5417vw;
+        height: 1.0417vw;
+        background: #E3C972 0% 0% no-repeat padding-box;
+        border: 0.0694vw solid #707070;
+        border-radius: 0.3472vw;
+        opacity: 1;
+    }
+
+    #mpic {
+        position: absolute;
+        top: 25.0528vw;
+        left: 44.5306vw;
+        width: 8.4722vw;
+        height: 8.4722vw;
+        background: transparent url("https://ifh.cc/g/kMlUj6.png") 0% 0% no-repeat padding-box;
+        background-size: contain;
+        opacity: 1;
+    }
+
+    #mtext {
+        position: absolute;
+        top: 34.4722vw;
+        left: 44.0306vw;
+        width: 9.1667vw;
+        height: 3.7500vw;
+        text-align: center;
+        font: normal normal bold 1.3889vw/1.8750vw Segoe UI;
+        letter-spacing: 0vw;
+        color: #000000;
+        opacity: 1;
+    }
+
+    #green {
+        position: absolute;
+        top: 23.1250vw;
+        left: 58.8750vw;
+        width: 18.5417vw;
+        height: 16.0417vw;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0vw 0.2083vw 0.4167vw #00000029;
+        border: 0.0694vw solid #707070;
+        border-radius: 0.4861vw;
+        opacity: 1;
+    }
+
+    #gcolor {
+        position: absolute;
+        top: 23.1250vw;
+        left: 58.8750vw;
+        width: 18.5417vw;
+        height: 1.0417vw;
+        background: #72E37A 0% 0% no-repeat padding-box;
+        border: 0.0694vw solid #707070;
+        border-radius: 0.3472vw;
+        opacity: 1;
+
+    }
+
+    #gpic {
+        position: absolute;
+        top: 25.5000vw;
+        left:64.4389vw;
+        width: 7.7083vw;
+        height: 7.7083vw;
+        background: transparent url("https://ifh.cc/g/liIyvt.png") 0% 0% no-repeat padding-box;
+        background-size: contain;
+        opacity: 1;
+    }
+
+
+    #gtext {
+        position: absolute;
+        top: 34.4722vw;
+        left: 61.2750vw;
+        width: 14.0278vw;
+        height: 3.7500vw;
+        text-align: center;
+        font: normal normal bold 1.3889vw/1.8750vw Segoe UI;
+        letter-spacing: 0vw;
+        color: #000000;
+        opacity: 1;
+    }
